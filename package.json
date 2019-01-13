@@ -1,0 +1,18 @@
+{
+  "name": "shopping",
+  "version": "1.0.0",
+  "description": "dummy api for shopping cart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "shopping"
+  ],
+  "author": "Intizar Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
