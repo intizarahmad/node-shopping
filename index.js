@@ -5,7 +5,8 @@ const app = express();
 app.use(cors());
 app.get('/product-list/:page?', (req, res)=>{
     const page = req.params.page;
-    let startProductId = page*10+1
+    const pageSize = req.params.pageSize || 8;
+    let startProductId = page*pageSize+1
     let products = [];
     for(let i=startProductId; i<startProductId+10; i++){
         let product ={};
