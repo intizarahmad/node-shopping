@@ -1,7 +1,8 @@
 const express = require('express');
-
+const cors = require('cors')
 const port = process.env.PORT ||4000;
 const app = express();
+app.use(cors());
 app.get('/product-list/:page?', (req, res)=>{
     const page = req.params.page;
     let startProductId = page*10+1
